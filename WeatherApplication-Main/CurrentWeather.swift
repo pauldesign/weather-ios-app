@@ -14,7 +14,7 @@ struct CurrentWeather {
     let humidity: Double
     let precipitationProbability: Double
     let summary: String
-    let icon: UIImage
+//    let icon: UIImage
 }
 
 extension CurrentWeather: JSONDecodable {
@@ -24,7 +24,7 @@ extension CurrentWeather: JSONDecodable {
             humidity = JSON["humidity"] as? Double,
             precipitationProbability = JSON["precipProbability"] as? Double,
             summary = JSON["summary"] as? String
-//            iconString = JSON["icon"] as? String 
+//            iconString = JSON["icon"] as? String
             else {
                 return nil
         }
@@ -37,7 +37,7 @@ extension CurrentWeather: JSONDecodable {
         self.summary = summary
 //        self.icon = icon
     }
-
+}
 
 
 
