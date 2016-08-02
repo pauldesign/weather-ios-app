@@ -49,8 +49,6 @@ class ViewController: UIViewController {
         
         forecastAPIClient.fetchCurrentWeather(coordinate) { result in
             
-            self.toggleRefreshAnimation(false)
-            
             switch result {
                 
             case .Success(let currentWeather):

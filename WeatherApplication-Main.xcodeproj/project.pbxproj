@@ -64,10 +64,9 @@
 		CE0C2DCF1D50FB1A00EC4371 /* WeatherApplication-Main */ = {
 			isa = PBXGroup;
 			children = (
+				CE0C2DEC1D51017800EC4371 /* Weather Info */,
 				CE0C2DD01D50FB1A00EC4371 /* AppDelegate.swift */,
 				CE0C2DD21D50FB1A00EC4371 /* FirstViewController.swift */,
-				CE0C2DEA1D51005700EC4371 /* WeatherIcon.swift */,
-				CE0C2DE81D51002D00EC4371 /* CurrentWeather.swift */,
 				CE0C2DE41D50FFA300EC4371 /* ForecastClient.swift */,
 				CE0C2DE61D50FFF800EC4371 /* APIClient.swift */,
 				CE0C2DD41D50FB1A00EC4371 /* SecondViewController.swift */,
@@ -77,6 +76,15 @@
 				CE0C2DDE1D50FB1A00EC4371 /* Info.plist */,
 			);
 			path = "WeatherApplication-Main";
+			sourceTree = "<group>";
+		};
+		CE0C2DEC1D51017800EC4371 /* Weather Info */ = {
+			isa = PBXGroup;
+			children = (
+				CE0C2DEA1D51005700EC4371 /* WeatherIcon.swift */,
+				CE0C2DE81D51002D00EC4371 /* CurrentWeather.swift */,
+			);
+			name = "Weather Info";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
