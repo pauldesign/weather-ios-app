@@ -23,20 +23,21 @@ extension CurrentWeather: JSONDecodable {
         guard let temperature = JSON["temperature"] as? Double,
             humidity = JSON["humidity"] as? Double,
             precipitationProbability = JSON["precipProbability"] as? Double,
-            summary = JSON["summary"] as? String,
-            iconString = JSON["icon"] as? String else {
+            summary = JSON["summary"] as? String
+//            iconString = JSON["icon"] as? String 
+            else {
                 return nil
         }
         
-        let icon = WeatherIcon(rawValue: iconString).image
+//        let icon = WeatherIcon(rawValue: iconString).image
         
         self.temperature = temperature
         self.humidity = humidity
         self.precipitationProbability = precipitationProbability
         self.summary = summary
-        self.icon = icon
+//        self.icon = icon
     }
-}
+
 
 
 
